@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logo img {
+            margin: 3px;
+            width: 65px;
+            height: 65px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 14px;
+
+        }
+
+        .logo {
+            display: flex;
+
+        }
+
+        .logo a {
+            text-decoration: none;
+            font-size: 18px;
+            margin: 12px;
+
+        }
+
+        a {
+            font-weight: 600;
+            color: black;
+        }
+
+        i {
+            margin-right: 8px;
+        }
+
+        .main {
+            width: 100%;
+            height: 90vh;
+            background-color: whitesmoke;
+            border: 1px solid  transparent;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .log {
+            width: 35%;
+            height: 60vh;
+            border: 1px solid black;
+            margin: 10vh auto;
+            border-radius: 8px;
+        }
+
+        .pro {
+            width: 150px;
+            height: 150px;
+            background-image: url(https://icon-library.com/images/code-icon/code-icon-8.jpg);
+            background-size: cover;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+        form{
+            width: 90%;
+            height: 36vh;
+           margin: auto;
+           
+        }
+        input{
+            width: 90%;
+            height: 35px;
+            margin: 10px;
+        }
+        select{
+            width: 90%;
+            height: 35px;
+            margin: 10px;
+        }
+        label{
+            margin-left:10px ;
+            font-weight: 600;
+        }
+        button{
+            width: 40%;
+            height: 40px;
+            background-color: lightblue;
+            border: none;
+            margin-top: 10px;
+            margin-left: 27%;
+            font-size: 20px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        button:hover{
+            background-color: rgb(62, 62, 208);
+            cursor: pointer;
+        }
+        .left{
+            width:550px;
+            height: 70vh;
+            margin-top: 40px;
+        }
+        .right{
+            width:400px;
+            height: 80vh;
+            border: 1px solid black;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="logo"><img src="https://icon-library.com/images/code-icon/code-icon-8.jpg" alt="">
+            <h2 style="width: 164px;padding-top: 5px;">TECH UNIT BOOK</h2>
+            <!-- <a href="techbook.html"><i class="fa fa-home">Home</i></a>
+            <a href=""><i class="fa fa-home">Tutorials</i></a>
+            <a href=""><i class="fa fa-home">Template</i></a>
+            <a href=""><i class="fa fa-home">Development</i></a>
+            <a href=""><i class="fa fa-bullhorn"> Project Kit</i></a>
+            <a href=""><i class="fa fa-home">Blog</i></a> -->
+        </div>
+        <div class="navbar" style="padding: 14px;">
+            <a href="logintech.html"><i class="fa fa-id-card-o">Sing In</i></a>
+            <!-- <a href=""><i class="fa fa-user-plus">Sing Up</i></a> -->
+        </div>
+    </div>
+    <div class="main">
+      <div class="left">
+        <div class="pro"></div>
+        <h1 style="color:blue;text-align: center;margin-top: 20px;">Register Your Online Workspace</h1>
+        <h2 style="text-align: center;margin-top: 20px;">For Developer self assignment Program
+            Build Your Digital Resume</h2>
+      </div>
+      <div class="right">
+        <h1 style="text-align: center; margin-bottom: 10px;margin-top: 10px;">Create Your Workspace</h1>
+       
+        <form action="">
+            <label for="Name">Name</label>
+            <input type="Name"><br>
+            <label for="email">Email</label>
+            <input type="email">
+            <br>
+            <label for="pasword">Password</label>
+            <input type="password"><br>
+            <label for="Number">Mobile Number</label>
+            <input type="number">
+            <select name="scourse" class="form-select mb-2">
+                <option>Select Your Course</option>
+                <option>Web Design</option>
+                <option value="php">PHP Full Stack</option>
+                <option value="java">Java Full Stack</option>
+                <option value="python">Python Full Stack</option>
+                <option value="node">Node Full Stack</option>
+                <option value="Dot Net">Dot Net Full Stack</option>
+                <option>UI/Ux With React</option>
+            </select>
+            <button>Register Now</button>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>
